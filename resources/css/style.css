@@ -1,0 +1,43 @@
+html {
+  font-family: sans-serif;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
+
+header .brand {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+    padding-left: 24px;
+}
+
+header .logo {
+  height: 32px;
+}
+
+header .brand span {
+    line-height: 32px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0 24px 0 0;
+}
+
+nav li {
+  padding-right: 16px;
+}
+
+header .mobile {
+  display: none;
+}
