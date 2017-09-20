@@ -41,3 +41,20 @@ nav li {
 header .mobile {
   display: none;
 }
+
+.main {
+  padding-top: 64px;
+}
+
+.container {
+  display: flex;
+}
+
+.banner {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.banner img {
+  width: 100%;
+}
