@@ -1,10 +1,12 @@
 html {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 header {
   position: fixed;
   width: 100%;
+  background-color: white;
 }
 
 header .content {
@@ -42,25 +44,32 @@ header .mobile {
   display: none;
 }
 
-.main {
-  padding-top: 64px;
+.container {
+  margin: auto;
 }
 
-#start {
+.main {
+  padding-top: 64px;
   background-color: lightgrey;
 }
 
-.container {
+.main .container {
   display: flex;
+  justify-content: space-between;
 }
 
-.banner {
-  max-width: 60%;
+.left-section {
+  width: 60%;
   padding: 32px 24px;
 }
 
-.banner img {
-  width: 100%;
+.left-section img {
+  width: 100%
+}
+
+.right-section {
+  display: flex;
+  width: 40%
 }
 
 .headline {
@@ -76,6 +85,14 @@ header .mobile {
 
 .headline h3 {
   margin: 0 0 32px 0;
+}
+
+.headline a {
+  background: #383838;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .button {
