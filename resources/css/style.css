@@ -4,7 +4,6 @@ html {
 }
 
 header {
-  position: fixed;
   width: 100%;
   background-color: white;
 }
@@ -104,6 +103,33 @@ header .mobile {
   /* width: 60%; */
 }
 
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+h4 {
+  font-weight: bold;
+  color: #383838;
+}
+
+p {
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+  color: gray
+}
+
 .practice .container {
   display: flex;
   justify-content: space-between;
@@ -116,6 +142,20 @@ header .mobile {
 
 .event {
   display: flex;
+}
+
+.practice .left-section h1 {
+    padding-top: 32px;
+}
+
+.practice .left-section p {
+    padding: 24px 24px 24px 0px;
+}
+
+.practice .left-section span {
+  font-size: .75em;
+  color: #383838;
+  line-height: 0.95em
 }
 
 .event img {
@@ -141,5 +181,5 @@ header .mobile {
 
 .event-text a {
   text-decoration: none;
-  color: mediumblue;
+  color: #4ba3f4;;
 }
