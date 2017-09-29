@@ -123,6 +123,11 @@ h4 {
   color: #383838;
 }
 
+h5 {
+  font-weight: bold;
+  font-size: 0.83em;
+}
+
 p {
   font-weight: 400;
   font-size: 0.8rem;
@@ -182,4 +187,45 @@ p {
 .event-text a {
   text-decoration: none;
   color: #4ba3f4;;
+}
+
+.learning {
+  background-color: #F5F5F5;
+  padding: 32px 72px 32px 72px;
+}
+
+.areas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.area {
+  width: 30%;
+  margin: 16px 16px;
+  background-color: white;
+}
+
+.area img {
+  width: 100%;
+}
+
+.area-content {
+  color: gray;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 24px;
+}
+
+.area-content h5 {
+  padding: 8px 0;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  padding-top: 32px;
+  padding-bottom: 16px;
 }
