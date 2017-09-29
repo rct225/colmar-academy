@@ -169,6 +169,10 @@ p {
   padding: 16px;
 }
 
+.event:hover {
+  background-color: lightgrey;
+}
+
 .event-text {
   display: flex;
   flex-direction: column;
@@ -228,4 +232,66 @@ p {
   margin: auto;
   padding-top: 32px;
   padding-bottom: 16px;
+}
+
+.thesis .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.thesis .right-section {
+  flex-direction: column;
+  padding-top: 16px;
+}
+
+.thesis-item {
+  display: flex;
+}
+
+.thesis .left-section h1 {
+    padding-top: 32px;
+}
+
+.thesis .left-section p {
+    padding: 24px 24px 24px 0px;
+}
+
+.thesis .left-section span {
+  font-size: .75em;
+  color: #383838;
+  line-height: 0.95em
+}
+
+.thesis-item img {
+  width: 35%;
+  height: 35%;
+  padding: 16px;
+}
+
+.thesis-item:hover {
+  background-color: lightgrey;
+}
+
+.thesis-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.thesis-text h2 {
+  margin: 0;
+}
+
+.thesis-text p {
+  margin: 0;
+  padding: 8px 0;
+}
+
+.thesis-text a {
+  text-decoration: none;
+  color: #4ba3f4;;
+}
+
+video {
+  width: 100%;
 }
