@@ -1,6 +1,7 @@
 html {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  color: #383838;
 }
 
 header {
@@ -27,6 +28,10 @@ header .logo {
 
 header .brand span {
     line-height: 32px;
+}
+
+.company-grey {
+  color: lightgrey;
 }
 
 header nav ul {
@@ -301,6 +306,7 @@ video {
 footer .container {
   display: flex;
   align-items: center;
+  padding: 16px 0 64px 0;
 }
 
 footer .copyright {
