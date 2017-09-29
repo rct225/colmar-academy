@@ -234,6 +234,9 @@ p {
   padding-bottom: 16px;
 }
 
+.thesis {
+  border-bottom: 1px solid lightgrey;
+}
 .thesis .container {
   display: flex;
   justify-content: space-between;
@@ -294,4 +297,26 @@ p {
 
 video {
   width: 100%;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+}
+
+footer .copyright {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+  padding-left: 24px;
+}
+
+.terms ul {
+  display: flex;
+  list-style: none;
+  padding: 0 24px 0 0;
+}
+
+.terms ul li {
+  padding-left: 16px;
 }
