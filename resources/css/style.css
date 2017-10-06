@@ -1,241 +1,11 @@
+/* set font-family and initial font-size and color */
 html {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: #383838;
 }
 
-header {
-  width: 100%;
-  background-color: white;
-}
-
-header .content {
-  display: flex;
-  align-items: center;
-  height: 64px;
-}
-
-header .brand {
-    display: flex;
-    margin-right: auto;
-    align-items: center;
-    padding-left: 24px;
-}
-
-header .logo {
-  height: 32px;
-}
-
-header .brand span {
-    line-height: 32px;
-}
-
-.company-grey {
-  color: lightgrey;
-}
-
-header .mobile {
-  display: none;
-}
-
-img.mobile {
-  display: none;
-}
-
-.areas-list {
-  display: none;
-}
-
-nav {
-  text-align: right;
-  flex-grow: 1;
-}
-
-nav.desktop {
-  padding-right: 24px;
-}
-
-.desktop a {
-  padding-right: 16px;
-  text-decoration: none;
-}
-
-@media only screen and (max-width: 480px) {
-  .main .container {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .main .left-section {
-    width: 100%;
-    padding: 0px 0px;
-  }
-
-  .main .right-section {
-    width: 100%;
-  }
-
-  .right-section .headline {
-    margin: 32px 24px;
-    padding-left: 0px;
-    align-items: center;
-    width: 100%;
-  }
-
-  header .desktop {
-    display: none;
-  }
-
-  img.desktop {
-    display: none;
-  }
-
-  header .brand {
-    display: none;
-  }
-
-  img.mobile {
-      display: flex;
-      width: 100%;
-      padding-left: 16px;
-      padding-bottom: 16px;
-  }
-
-  nav.mobile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 24px;
-    padding-left: 24px;
-  }
-
-  .practice .left-section {
-    display: none;
-  }
-
-  .practice .right-section {
-    width: 100%;
-  }
-
-  .event {
-    width: 100%;
-    flex-direction: column;
-    padding-bottom: 32px;
-  }
-
-  .event-text {
-    padding-left: 32px;
-  }
-
-  .learning .areas-grid {
-    display: none;
-  }
-
-  .areas-list {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .areas-list a {
-    background-color: #DCDCDC;
-    color: #383838;
-    text-decoration: none;
-    padding: 16px;
-    margin-bottom: 8px;
-    font-size: 1.4rem;
-  }
-
-  .thesis .right-section {
-    display: none;
-  }
-
-  .thesis .left-section {
-    width: 100%;
-    padding: 0px;
-  }
-
-  .thesis .left-section p {
-    display: none;
-  }
-
-  .thesis .left-section h1 {
-    display: none;
-  }
-
-  footer .container {
-    margin-top: 24px;
-  }
-
-  .terms {
-    display: none;
-  }
-}
-
-.container {
-  margin: auto;
-}
-
-.main {
-  background-color: lightgrey;
-}
-
-.main .container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.left-section {
-  width: 60%;
-  padding: 32px 24px;
-}
-
-.left-section img {
-  width: 100%
-}
-
-.right-section {
-  display: flex;
-  width: 40%
-}
-
-.headline {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 70%;
-}
-
-.headline h1 {
-  margin: 0 0 32px 0;
-}
-
-.headline h2 {
-  margin: 0 0 32px 0;
-}
-
-.headline a {
-  background: #383838;
-  color: white;
-  padding: 16px 0px;
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-  padding: 8px 0;
-  background-color: black;
-  color: white;
-  /* width: 60%; */
-}
-
+/* setting for various headings and paragraph elements */
 h1 {
   font-size: 2em;
   font-weight: bold;
@@ -268,6 +38,128 @@ p {
   color: gray
 }
 
+/* header styles */
+header {
+  width: 100%;
+  background-color: white;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
+
+header .brand {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+    padding-left: 24px;
+}
+
+header .logo {
+  height: 32px;
+}
+
+header .brand span {
+    line-height: 32px;
+}
+
+/* styles two-tone effect on company name */
+.company-grey {
+  color: lightgrey;
+}
+
+header .mobile {
+  display: none;
+}
+
+nav {
+  text-align: right;
+  flex-grow: 1;
+}
+
+nav.desktop {
+  padding-right: 24px;
+}
+
+.desktop a {
+  padding-right: 16px;
+  text-decoration: none;
+}
+
+/* generic containter to set margins */
+.container {
+  margin: auto;
+}
+
+/* the leadoff section of the site */
+
+.lead{
+  background-color: lightgrey;
+}
+
+.lead .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* split pages into left and right-sections
+   formatting mostly for desktop browsers
+   */
+
+.left-section {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.left-section img {
+  width: 100%
+}
+
+.right-section {
+  display: flex;
+  width: 40%
+}
+
+/* format the lead message */
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+}
+
+.headline h1 {
+  margin: 0 0 32px 0;
+}
+
+.headline h2 {
+  margin: 0 0 32px 0;
+}
+
+.headline a {
+  background: #383838;
+  color: white;
+  padding: 16px 0px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+/* format start here button */
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0;
+  background-color: black;
+  color: white;
+  /* width: 60%; */
+}
+
+/* "practice" general information section */
+
 .practice .container {
   display: flex;
   justify-content: space-between;
@@ -278,6 +170,7 @@ p {
   padding-top: 16px;
 }
 
+/* generic container for events */
 .event {
   display: flex;
 }
@@ -296,6 +189,11 @@ p {
   line-height: 0.95em
 }
 
+/* hides mobile formatted images on desktop site */
+img.mobile {
+  display: none;
+}
+
 .event img.desktop {
   width: 35%;
   height: 35%;
@@ -306,6 +204,7 @@ p {
   background-color: lightgrey;
 }
 
+/* container for text associate with event items */
 .event-text {
   display: flex;
   flex-direction: column;
@@ -326,11 +225,13 @@ p {
   color: #4ba3f4;;
 }
 
+/* instructional section */
 .learning {
   background-color: #F5F5F5;
   padding: 32px 72px 32px 72px;
 }
 
+/* contains a grid of boxes containing course information */
 .areas-grid {
   display: flex;
   justify-content: center;
@@ -338,6 +239,11 @@ p {
   flex-direction: row;
 }
 
+.areas-list {
+  display: none;
+}
+
+/* box containing course information about area */
 .area {
   width: 30%;
   margin: 16px 16px;
@@ -367,12 +273,15 @@ p {
   font-size: 0.83em;
 }
 
+/* format section titles for learning and thesis sections */
 .title {
   width: 100%;
   text-align: center;
   margin: auto;
   padding-bottom: 32px;
 }
+
+/* thesis section */
 
 .thesis {
   border-bottom: 1px solid lightgrey;
@@ -441,6 +350,8 @@ video {
   width: 100%;
 }
 
+/* footer */
+
 footer .container {
   display: flex;
   align-items: center;
@@ -454,6 +365,7 @@ footer .copyright {
   padding: 16px 0 16px 24px;
 }
 
+/* copyright and legal info in footer */
 .terms ul {
   display: flex;
   list-style: none;
@@ -462,4 +374,139 @@ footer .copyright {
 
 .terms ul li {
   padding-left: 16px;
+}
+
+/* media section to change styles below 590px
+   590px seems to be a spot where things would "break" unnaturally
+   */
+@media only screen and (max-width: 590px) {
+  /* stack sections in lead section */
+  .lead .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lead .left-section {
+    width: 100%;
+    padding: 0px 0px;
+  }
+
+  .lead .right-section {
+    width: 100%;
+  }
+
+  /* style the headlines for mobile */
+  .right-section .headline {
+    margin: 32px 24px;
+    padding-left: 0px;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* hide the destkop items in header for mobile devices */
+  header .desktop {
+    display: none;
+  }
+
+  /* hide the company name in the header for mobile devices */
+  header .brand {
+    display: none;
+  }
+
+  /* display the nav icons in for mobile devices */
+  nav.mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  /* hide the left section in the mobile site */
+  .practice .left-section {
+    display: none;
+  }
+
+  /* let events stretch across page in mobile */
+  .practice .right-section {
+    width: 100%;
+  }
+
+  .event {
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 32px;
+  }
+
+  .event-text {
+    padding-left: 32px;
+  }
+
+  /* hide the desktop version of images in the events section */
+  img.desktop {
+    display: none;
+  }
+
+  /* display the mobile version of images for event section */
+  img.mobile {
+      display: flex;
+      width: 100%;
+      padding-left: 16px;
+      padding-bottom: 16px;
+  }
+
+  /* hide the grid of instructional areas for mobile */
+  .learning .areas-grid {
+    display: none;
+  }
+
+  /* displau list of instructional areas for mobile */
+  .areas-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* style the list of instructional areas for mobile */
+  .areas-list a {
+    background-color: #DCDCDC;
+    color: #383838;
+    text-decoration: none;
+    padding: 16px;
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+  }
+
+  /* hide all but the video in theis section */
+  .thesis .right-section {
+    display: none;
+  }
+
+  .thesis .left-section {
+    width: 100%;
+    padding: 0px;
+  }
+
+  /* hide the text below the video for mobile */
+  .thesis .left-section p {
+    display: none;
+  }
+
+  .thesis .left-section h1 {
+    display: none;
+  }
+
+  /* move the footer slightly for mobile */
+  footer .container {
+    margin-top: 24px;
+  }
+
+  /* hide the terms links for mobile */
+  .terms {
+    display: none;
+  }
 }
