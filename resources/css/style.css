@@ -34,18 +34,146 @@ header .brand span {
   color: lightgrey;
 }
 
-header nav ul {
-  display: flex;
-  list-style: none;
-  padding: 0 24px 0 0;
-}
-
-nav li {
-  padding-right: 16px;
-}
-
 header .mobile {
   display: none;
+}
+
+img.mobile {
+  display: none;
+}
+
+.areas-list {
+  display: none;
+}
+
+nav {
+  text-align: right;
+  flex-grow: 1;
+}
+
+nav.desktop {
+  padding-right: 24px;
+}
+
+.desktop a {
+  padding-right: 16px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .main .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main .left-section {
+    width: 100%;
+    padding: 0px 0px;
+  }
+
+  .main .right-section {
+    width: 100%;
+  }
+
+  .right-section .headline {
+    margin: 32px 24px;
+    padding-left: 0px;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .desktop {
+    display: none;
+  }
+
+  img.desktop {
+    display: none;
+  }
+
+  header .brand {
+    display: none;
+  }
+
+  img.mobile {
+      display: flex;
+      width: 100%;
+      padding-left: 16px;
+      padding-bottom: 16px;
+  }
+
+  nav.mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .practice .left-section {
+    display: none;
+  }
+
+  .practice .right-section {
+    width: 100%;
+  }
+
+  .event {
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 32px;
+  }
+
+  .event-text {
+    padding-left: 32px;
+  }
+
+  .learning .areas-grid {
+    display: none;
+  }
+
+  .areas-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .areas-list a {
+    background-color: #DCDCDC;
+    color: #383838;
+    text-decoration: none;
+    padding: 16px;
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+  }
+
+  .thesis .right-section {
+    display: none;
+  }
+
+  .thesis .left-section {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .thesis .left-section p {
+    display: none;
+  }
+
+  .thesis .left-section h1 {
+    display: none;
+  }
+
+  footer .container {
+    margin-top: 24px;
+  }
+
+  .terms {
+    display: none;
+  }
 }
 
 .container {
@@ -93,9 +221,10 @@ header .mobile {
 .headline a {
   background: #383838;
   color: white;
-  padding: 16px;
+  padding: 16px 0px;
   text-align: center;
   text-decoration: none;
+  width: 100%;
 }
 
 .button {
@@ -167,7 +296,7 @@ p {
   line-height: 0.95em
 }
 
-.event img {
+.event img.desktop {
   width: 35%;
   height: 35%;
   padding: 16px;
@@ -202,7 +331,7 @@ p {
   padding: 32px 72px 32px 72px;
 }
 
-.areas {
+.areas-grid {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -234,13 +363,14 @@ p {
   width: 100%;
   text-align: center;
   margin: auto;
-  padding-top: 32px;
-  padding-bottom: 16px;
+  padding-bottom: 32px;
 }
 
 .thesis {
   border-bottom: 1px solid lightgrey;
+  padding-top: 32px;
 }
+
 .thesis .container {
   display: flex;
   justify-content: space-between;
@@ -306,14 +436,14 @@ video {
 footer .container {
   display: flex;
   align-items: center;
-  padding: 16px 0 64px 0;
 }
 
 footer .copyright {
   display: flex;
   margin-right: auto;
   align-items: center;
-  padding-left: 24px;
+  /* padding-left: 24px */
+  padding: 16px 0 16px 24px;
 }
 
 .terms ul {
